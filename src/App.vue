@@ -1,9 +1,9 @@
 <template>
   <h1 class="my-4 text-center text-4xl font-bold text-white">Avatar - The Last Airbender</h1>
   <!-- Characters -->
-  <div class="mx-auto my-2 w-3/4 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
+  <div class="mx-auto my-2 w-11/12 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
     <h2 class="p-2 text-center text-3xl">Characters</h2>
-    <ul class="mx-auto w-3/4 rounded bg-slate-900 p-2 text-slate-100">
+    <ul class="mx-auto w-10/12 rounded bg-slate-900 p-2 text-slate-100">
       <li
         v-for="character in characterList"
         class="my-2 flex items-center justify-between rounded border bg-slate-950 p-2 hover:bg-slate-800"
@@ -22,9 +22,9 @@
   </div>
 
   <!-- Favorite Characters -->
-  <div class="mx-auto my-2 w-3/4 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
+  <div class="mx-auto my-2 w-11/12 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
     <h2 class="p-2 text-center text-3xl">Favorite Characters</h2>
-    <ul class="mx-auto w-3/4 rounded bg-slate-900 p-2 text-slate-100">
+    <ul class="mx-auto w-10/12 rounded bg-slate-900 p-2 text-slate-100">
       <p v-if="favoriteList.length < 1" class="text-center text-xl">No favorites added, yet.</p>
       <li
         v-else
@@ -44,7 +44,7 @@
   <BenderStatistics :characters="characterList" />
 
   <!-- New Character -->
-  <div class="mx-auto my-2 w-3/4 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
+  <div class="mx-auto my-2 w-11/12 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
     <h2 class="p-2 text-center text-3xl">Add New Character</h2>
     <div class="flex flex-col gap-2">
       <input

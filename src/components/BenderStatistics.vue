@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-auto my-2 w-3/4 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
+  <div class="mx-auto my-2 w-11/12 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
     <h2 class="p-2 text-center text-3xl">Element Statistics</h2>
-    <ul class="mx-auto w-3/4 rounded bg-slate-900 p-2 text-slate-100">
+    <ul class="mx-auto w-10/12 rounded bg-slate-900 p-2 text-slate-100">
       <li
         v-for="(stat, type) in benderStatistics"
         :key="stat"
