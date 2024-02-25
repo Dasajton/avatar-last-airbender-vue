@@ -42,6 +42,7 @@ export default {
       } else if (!this.characters.some((character) => character.name === this.newCharacter.name)) {
         this.characters.push(this.newCharacter)
         this.newCharacter = { name: "", element: [] }
+        alert("Character is successfully added to the Characters list!")
       } else {
         alert("Character is already in Characters List")
       }
