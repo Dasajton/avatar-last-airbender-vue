@@ -132,13 +132,13 @@ export default {
       this.newCharacter = { name: "", element: [] }
     },
     removeCharacter(character) {
-      this.characterList.pop(this.character)
+      this.characterList = this.characterList.filter((c) => c !== character)
     },
     addFavoriteCharacter(character) {
       this.favoriteList.push(character)
     },
     removeFavoriteCharacter(character) {
-      this.favoriteList.pop(character)
+      this.favoriteList = this.favoriteList.filter((c) => c !== character)
     }
   }
 }
