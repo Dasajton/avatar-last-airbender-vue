@@ -99,8 +99,13 @@ export default {
   }),
   methods: {
     addNewCharacter() {
-      if (!this.characterList.some((character) => character.name === this.newCharacter.name)) {
+      if (this.newCharacter.name === "" || this.newCharacter.element.length === 0) {
+        alert("Please type in the name and element of your chosen character.")
+      } else if (
+        !this.characterList.some((character) => character.name === this.newCharacter.name)
+      ) {
         this.characterList.push(this.newCharacter)
+        this.newCharacter = { name: "", element: [] }
       } else {
         alert("Character is already in Characters List")
       }
