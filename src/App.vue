@@ -135,7 +135,9 @@ export default {
       this.characterList = this.characterList.filter((c) => c !== character)
     },
     addFavoriteCharacter(character) {
-      this.favoriteList.push(character)
+      if (!this.favoriteList.includes(character)) {
+        this.favoriteList.push(character)
+      }
     },
     removeFavoriteCharacter(character) {
       this.favoriteList = this.favoriteList.filter((c) => c !== character)
