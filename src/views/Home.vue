@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import CharacterList from "../components/CharacterList.vue"
-import FavoriteCharacters from "../components/FavoriteCharacters.vue"
-import BenderStatistics from "../components/BenderStatistics.vue"
-import NewCharacter from "../components/NewCharacter.vue"
+import CharacterList from "../components/character-list.vue"
+import FavoriteCharacters from "../components/favorite-characters.vue"
+import BenderStatistics from "../components/bender-statistics.vue"
+import NewCharacter from "../components/new-character.vue"
 
 export default {
   components: {
