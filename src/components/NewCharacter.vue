@@ -20,7 +20,7 @@
         <option>Water</option>
         <option>None</option>
       </select>
-      <button @click="addNewCharacter" class="rounded bg-blue-500 p-2 hover:bg-blue-600">
+      <button @click="addNewCharacter" class="mt-3 rounded bg-blue-500 p-2 hover:bg-blue-600">
         Add new Character
       </button>
     </div>
