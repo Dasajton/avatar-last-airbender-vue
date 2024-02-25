@@ -1,8 +1,5 @@
 <script>
-import CharacterList from "../components/character-list.vue"
-import FavoriteCharacters from "../components/favorite-characters.vue"
-import BenderStatistics from "../components/bender-statistics.vue"
-import NewCharacter from "../components/new-character.vue"
+import { CharacterList, FavoriteCharacters, BenderStatistics, NewCharacter } from "@/components"
 
 export default {
   components: {
