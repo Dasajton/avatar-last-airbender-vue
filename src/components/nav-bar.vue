@@ -1,3 +1,7 @@
+<script>
+import { RouterLink } from "vue-router"
+</script>
+
 <template>
   <nav
     class="fixed top-0 flex h-12 w-full items-center justify-between bg-slate-950 px-4 text-slate-100 shadow-md shadow-blue-500"
@@ -10,7 +14,3 @@
   </nav>
   <div class="h-16 w-full"></div>
 </template>
-
-<script>
-import { RouterLink } from "vue-router"
-</script>

@@ -1,3 +1,14 @@
+<script>
+export default {
+  props: {
+    favorites: {
+      type: Array,
+      required: true
+    }
+  }
+}
+</script>
+
 <template>
   <div class="mx-auto my-2 w-11/12 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
     <h2 class="p-2 text-center text-3xl">Favorite Characters</h2>
@@ -17,14 +28,3 @@
     </ul>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    favorites: {
-      type: Array,
-      required: true
-    }
-  }
-}
-</script>

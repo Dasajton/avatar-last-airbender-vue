@@ -1,14 +1,3 @@
-<template>
-  <character-list
-    :characters="characterList"
-    @remove="removeCharacter"
-    @add-favorite="addFavoriteCharacter"
-  />
-  <favorite-characters :favorites="favoriteList" @remove="removeFavoriteCharacter" />
-  <bender-statistics :characters="characterList" />
-  <new-character :characters="characterList" />
-</template>
-
 <script>
 import CharacterList from "../components/character-list.vue"
 import FavoriteCharacters from "../components/favorite-characters.vue"
@@ -60,3 +49,14 @@ export default {
   }
 }
 </script>
+
+<template>
+  <character-list
+    :characters="characterList"
+    @remove="removeCharacter"
+    @add-favorite="addFavoriteCharacter"
+  />
+  <favorite-characters :favorites="favoriteList" @remove="removeFavoriteCharacter" />
+  <bender-statistics :characters="characterList" />
+  <new-character :characters="characterList" />
+</template>
