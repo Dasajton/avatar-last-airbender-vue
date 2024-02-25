@@ -2,18 +2,24 @@
   <div class="mx-auto my-2 w-11/12 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
     <h2 class="p-2 text-center text-3xl">Add New Character</h2>
     <div class="flex flex-col gap-2">
+      <label class="-mb-2 text-center text-sm text-green-500">Name of the new Character</label>
       <input
         v-model="newCharacter.name"
         class="w-full rounded bg-slate-800 p-2 text-center text-slate-100"
         type="text"
-        placeholder="Name of the new Character"
       />
-      <input
+      <label class="-mb-2 text-center text-sm text-green-500">Element of the new Character</label>
+      <select
         v-model="newCharacter.element"
         class="w-full rounded bg-slate-800 p-2 text-center text-slate-100"
-        type="text"
-        placeholder="Element of the new Character"
-      />
+      >
+        <option class="text-gray-500" selected disabled>Please select an element</option>
+        <option>Air</option>
+        <option>Earth</option>
+        <option>Fire</option>
+        <option>Water</option>
+        <option>None</option>
+      </select>
       <button @click="addNewCharacter" class="rounded bg-blue-500 p-2 hover:bg-blue-600">
         Add new Character
       </button>

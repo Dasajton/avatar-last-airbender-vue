@@ -4,7 +4,9 @@
   <div class="mx-auto my-2 w-11/12 rounded-lg bg-slate-950 p-4 text-slate-100 md:w-3/5 xl:w-1/2">
     <h2 class="p-2 text-center text-3xl">Characters</h2>
     <ul class="mx-auto w-10/12 rounded bg-slate-900 p-2 text-slate-100">
+      <p v-if="characterList.length < 1" class="text-center text-xl">No Characters added, yet.</p>
       <li
+        v-else
         v-for="character in characterList"
         class="my-2 flex items-center justify-between rounded border bg-slate-950 p-2 hover:bg-slate-800"
       >

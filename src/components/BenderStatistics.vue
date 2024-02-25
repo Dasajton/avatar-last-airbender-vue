@@ -7,7 +7,11 @@
         :key="stat"
         class="my-2 flex items-center justify-between rounded border bg-slate-950 p-2 hover:bg-slate-800"
       >
-        <span>{{ type }}:</span> <span>{{ stat }}</span>
+        <div>
+          <span class="text-green-500">> </span>
+          <span>{{ type }}:</span>
+        </div>
+        <span>{{ stat }}</span>
       </li>
     </ul>
   </div>
