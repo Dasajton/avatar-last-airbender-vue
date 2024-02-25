@@ -1,14 +1,14 @@
 <template>
   <h1 class="my-4 text-center text-4xl font-bold text-white">Avatar - The Last Airbender</h1>
 
-  <CharacterList
+  <character-list
     :characters="characterList"
     @remove="removeCharacter"
     @addFavorite="addFavoriteCharacter"
   />
-  <FavoriteCharacters :favorites="favoriteList" @remove="removeFavoriteCharacter" />
-  <BenderStatistics :characters="characterList" />
-  <NewCharacter :characters="characterList" />
+  <favorite-characters :favorites="favoriteList" @remove="removeFavoriteCharacter" />
+  <bender-statistics :characters="characterList" />
+  <new-character :characters="characterList" />
 </template>
 
 <script>
