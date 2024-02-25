@@ -128,7 +128,12 @@ export default {
   },
   methods: {
     addNewCharacter() {
-      this.characterList.push(this.newCharacter)
+      if (!this.characterList.some((character) => character.name === this.newCharacter.name)) {
+        this.characterList.push(this.newCharacter)
+      } else {
+        alert("Character is already in Characters List")
+      }
+
       this.newCharacter = { name: "", element: [] }
     },
     removeCharacter(character) {
@@ -137,6 +142,8 @@ export default {
     addFavoriteCharacter(character) {
       if (!this.favoriteList.includes(character)) {
         this.favoriteList.push(character)
+      } else {
+        alert("Character is already in Favorites")
       }
     },
     removeFavoriteCharacter(character) {
