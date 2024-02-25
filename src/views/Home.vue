@@ -1,15 +1,26 @@
 <template>
-  <nav-bar />
-  <router-view />
+  <character-list
+    :characters="characterList"
+    @remove="removeCharacter"
+    @add-favorite="addFavoriteCharacter"
+  />
+  <favorite-characters :favorites="favoriteList" @remove="removeFavoriteCharacter" />
+  <bender-statistics :characters="characterList" />
+  <new-character :characters="characterList" />
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue"
-import { RouterView } from "vue-router"
+import CharacterList from "../components/CharacterList.vue"
+import FavoriteCharacters from "../components/FavoriteCharacters.vue"
+import BenderStatistics from "../components/BenderStatistics.vue"
+import NewCharacter from "../components/NewCharacter.vue"
 
 export default {
   components: {
-    NavBar
+    CharacterList,
+    FavoriteCharacters,
+    BenderStatistics,
+    NewCharacter
   },
   data: () => ({
     characterList: [
