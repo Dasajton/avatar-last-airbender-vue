@@ -10,7 +10,7 @@
       >
         <p class="text-xl"><span class="text-green-500">></span> {{ character.name }}</p>
         <div class="flex gap-2">
-          <button @click="$emit('addFavorite', character)" class="rounded bg-blue-500 px-2 py-1">
+          <button @click="$emit('add-favorite', character)" class="rounded bg-blue-500 px-2 py-1">
             ⭐
           </button>
           <button @click="$emit('remove', character)" class="rounded bg-blue-500 px-2 py-1">

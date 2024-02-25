@@ -4,7 +4,7 @@
   <character-list
     :characters="characterList"
     @remove="removeCharacter"
-    @addFavorite="addFavoriteCharacter"
+    @add-favorite="addFavoriteCharacter"
   />
   <favorite-characters :favorites="favoriteList" @remove="removeFavoriteCharacter" />
   <bender-statistics :characters="characterList" />
